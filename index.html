@@ -5,58 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SparkleBin | Garbage Bin Cleaning</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #d6f1da;
       color: #333;
     }
     header {
-      background-color: #2196F3;
+      background-color: #258ac7;
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem 1rem;
     }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+    .logo {
+      max-width: 100px;
+      margin-bottom: 1rem;
     }
     .section-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: 1.75rem;
       color: #2e7d32;
+      font-size: 1.75rem;
       margin-bottom: 1rem;
     }
-    .features, .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
     .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: none;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .cta {
-      background: #4CAF50;
+      background-color: #2e7d32;
       color: white;
       text-align: center;
-      padding: 2rem;
-      font-size: 1.2rem;
+      padding: 2rem 1rem;
     }
     .cta a {
-      display: inline-block;
-      margin-top: 1rem;
       background: white;
-      color: #4CAF50;
+      color: #2e7d32;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
       font-weight: bold;
@@ -69,44 +55,85 @@
       font-size: 0.9rem;
     }
     footer a {
-      color: #2196F3;
+      color: #258ac7;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>SparkleBin</h1>
-    <p>Professional Garbage Bin Cleaning – Fast. Fresh. Eco-Friendly.</p>
-    <p class="subtitle">We clean what others wont!</p>
+    <img src="sparklebin-logo@4x.png" alt="SparkleBin Logo" class="logo">
+    <img src="sparklebin-text@4x.png" alt="SparkleBin Text Logo" style="max-width: 250px;">
+    <p class="lead">Professional Garbage Bin Cleaning – Fast. Fresh. Eco-Friendly.</p>
+    <p><em>We clean what others won't.</em></p>
   </header>
 
-  <div class="section">
+  <div class="container py-5">
     <div class="section-title">Why Clean Your Bins?</div>
-    <div class="features">
-      <div class="card">💧 Remove Odors</div>
-      <div class="card">🦠 Kill Germs</div>
-      <div class="card">🐜 Keep Pests Away</div>
-      <div class="card">♻️ Eco-Friendly Disposal</div>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3 text-center">
+          <i class="mdi mdi-water-outline mdi-36px"></i>
+          <h5 class="mt-2">Remove Odors</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3 text-center">
+          <i class="mdi mdi-bacteria-outline mdi-36px"></i>
+          <h5 class="mt-2">Kill Germs</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3 text-center">
+          <i class="mdi mdi-bug-outline mdi-36px"></i>
+          <h5 class="mt-2">Keep Pests Away</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3 text-center">
+          <i class="mdi mdi-recycle mdi-36px"></i>
+          <h5 class="mt-2">Eco-Friendly Disposal</h5>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="section">
-    <div class="section-title">Our Services</div>
-    <div class="services">
-      <div class="card">
-        <strong>Residential</strong><br />
-        Trash, Recycle & Compost Bins
+    <div class="section-title mt-5">Our Services</div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Residential</h5>
+          <p>Trash, Recycle & Compost Bins</p>
+        </div>
       </div>
-      <div class="card">
-        <strong>Commercial</strong><br />
-        Bins & Dumpsters
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Commercial</h5>
+          <p>Bins & Dumpsters</p>
+        </div>
       </div>
-      <div class="card">
-        <strong>Plans</strong><br />
-        Monthly / One-Time Cleanings
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Plans</h5>
+          <p>Monthly / One-Time Cleanings</p>
+        </div>
       </div>
     </div>
+
+    <div class="section-title mt-5">Contact Us</div>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email Address" required />
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Send Message</button>
+      </div>
+    </form>
   </div>
 
   <div class="cta">
@@ -115,8 +142,10 @@
   </div>
 
   <footer>
-    <p>📞 <a href="tel:2088714821">208-871-4821</a> | ✉️ <a href="mailto:info@sparklebin.org">info@sparklebin.org</a></p>
+    <p><a href="tel:2088714821">208-871-4821</a> | <a href="mailto:info@sparklebin.org">info@sparklebin.org</a></p>
     <p>© 2025 SparkleBin. All rights reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
